@@ -34,9 +34,10 @@ namespace MetierSharedMemory.Models
         public DateTime UpdatedDate { get; set;} = DateTime.Now;
 
         [DisplayName("Id Encadreur")]
+
+        /// cle etrangere referencant l'encadreur du memoire
         public int? idEncadreur { get; set;}
         [ForeignKey("idEncadreur")]
-
         public Encadreur encadreur { get; set; }
     }
 }
